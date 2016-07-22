@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <title>Survey App</title>
+    <script src="angular/angular.js"></script>
+    <script src="angular-route/angular-route.js"></script>
+    <script src="assets/app.js" charset="utf-8"></script>
+    <script src="assets/factories/userFactory.js"></script>
+    <script src="assets/factories/pollsFactory.js"></script>
+    <script src="assets/controllers/mainController.js"></script>
+    <script src="assets/controllers/pollsController.js"></script>
+    <!--<base href="/">-->
+    <style>
+        .hidden_input {
+            display: none;
+        }
+    </style>
+</head>
+<body ng-controller="mainController">
+    <div class="main" ng-view></div>
+</body>
+</html>

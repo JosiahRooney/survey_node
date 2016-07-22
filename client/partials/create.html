@@ -1,0 +1,11 @@
+<div class="form">
+    <h3>New Poll <span><a href="#/dashboard">Cancel</a></span></h3>
+    <form action="" method="POST">
+        <p>Question: <input type="text" name="question" placeholder="Question" ng-model="newPoll.question"></p>
+        <p>Option 1: <input type="text" ng-model="newPoll.options[0].option" placeholder="Answer 1"></p>
+        <p>Option 2: <input type="text" ng-model="newPoll.options[1].option" placeholder="Answer 2"></p>
+        <p>Option 3: <input type="text" ng-model="newPoll.options[2].option" placeholder="Answer 3"></p>
+        <p>Option 4: <input type="text" ng-model="newPoll.options[3].option" placeholder="Answer 4"></p>
+        <p><button type="button" ng-click="create()">Add Poll</button></p>
+    </form>
+</div>

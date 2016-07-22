@@ -1,0 +1,20 @@
+<div class="poll">
+    <h3>{{poll.question}} <span><a href="#/dashboard">Go to Polls</a></span></h3>
+    <small>Click the vote button to choose one.</small>
+    <div class="table">
+        <table>
+            <tbody>
+                <tr>
+                    <th>Option</th>
+                    <th># Votes</th>
+                    <th>Action</th>
+                </tr>
+                <tr ng-repeat="option in poll.options">
+                    <td>{{option.option}}</td>
+                    <td>{{option.votes}}</td>
+                    <td><button ng-if="user_hasnt_voted" ng-click="vote(option.option, $index)">Vote</button></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
